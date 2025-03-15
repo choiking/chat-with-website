@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Summarizer Options</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="marked.min.js"></script>
+</head>
+<body>
+  <div id="api-key-section" class="api-key-section">
+    <label for="ai-select">Select AI Service:</label>
+    <select id="ai-select">
+      <option value="deepseek" selected>DeepSeek</option>
+      <option value="openai">OpenAI</option>
+    </select>
+    
+    <label for="api-key">API Key:</label>
+    <input type="text" id="api-key">
+    
+    <button id="save">Save API Key</button>
+  </div>
+  
+  <div id="chat-section" class="chat-section">
+    <h1>Chat with website</h1>
+    <h2>Current AI: <span id="selected-ai"></span> <button id="change-ai">Change AI</button></h2>
+    <div id="chat-messages"></div>
+    <div id="formatted-message" style="display: none;"></div>
+    <div class="checkbox-container">
+      <input type="checkbox" id="include-page-content">
+      <label for="include-page-content">Include current web page content</label>
+    </div>
+    <input type="text" id="chat-input" placeholder="Type your message">
+    <button id="send-message">Send</button>
+    <button id="clean-message">Clean</button>
+    <button id="stop-stream" disabled>Stop</button>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
