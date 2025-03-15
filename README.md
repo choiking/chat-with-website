@@ -16,8 +16,8 @@ Chat with Website is a Chrome extension that lets you interact with AI chat serv
 4. Click "Load unpacked" and select the  folder.
 
 ## Demo 
-![Demo Image 1](./demo-image1.png)
-![Demo Image 2](./demo-image2.png)
+![Demo Image 1](./demo1.png)
+![Demo Image 2](./demo2.png)
 
 ## Usage
 1. Click on the extension icon to open the popup.
